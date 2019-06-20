@@ -1,6 +1,29 @@
 .app {
     width: 540px;
     margin: 25px auto;
+    color: red;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 30px;
+    text-shadow: 1px 1px white;
+    justify-content: center;
+    text-align: center;
+}
+
+.board:hover {
+    cursor: url('./torpedo.png'), auto;
+}
+
+body {
+    background-image: url('./battleship.jpg')
+}
+
+.header {
+    color: red;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 100px;
+    text-shadow: 1px 1px white;
+    justify-content: center;
+    text-align: center;
 }
 
 .board {
@@ -12,16 +35,29 @@
 .board div {
     height: 50px;
     width: 50px;
-    border: 2px solid black;
+    border: 2px solid white;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-#hit{
 
 }
 
-#treasure{
+#miss{
+    background-image: url('./water.jpg');
+}
 
+#ship{
+    background-image: url('./boat.jpg');
+    background-repeat: no-repeat;
+    background-color: white;
+    background-position: center;
+}
+
+.button {
+    height: 50px;
+    width: 100px;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 20px;
+    color: gray;
+    background-color: white;
 }
